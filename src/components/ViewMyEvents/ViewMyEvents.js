@@ -50,7 +50,7 @@ const ViewEvents = () => {
                             <div key={idx} className="event-box">
                                 <Row>
                                     <Col xs={12} md={6}>
-                                        <Image src={event.image} rounded />
+                                        <Image src={`https://arcane-inlet-44879.herokuapp.com/${event.image}`} rounded />
                                     </Col>
                                     <Col xs={6} md={6}>
                                         <h4>{event.title}</h4>

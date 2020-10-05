@@ -23,9 +23,7 @@ const Login = () => {
                 setLoggedInUser({...loggedInUser, ...res});
                 history.replace(from)
             })
-
     }
-    // console.log(loggedInUser)
 
     return (
         <div className="login-area">

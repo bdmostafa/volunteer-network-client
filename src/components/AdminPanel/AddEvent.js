@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import './AdminPanel.css';
@@ -30,59 +30,70 @@ const AddEvent = () => {
     return (
         <div>
             <form className="add-event-form" onSubmit={handleSubmit(onSubmit)}>
-                <label htmlFor="title">Event Title</label>
-                <input
-                    placeholder="Enter title"
-                    type="text"
-                    name="title"
-                    ref={
-                        register({
-                            required: true
-                        })}
-                />
-                {
-                    errors.title
-                    && <p className="error">Event title is required.</p>
-                }
+                <Row>
+                    <Col>
+                        <label htmlFor="title">Event Title</label>
+                        <input
+                            placeholder="Enter title"
+                            type="text"
+                            name="title"
+                            ref={
+                                register({
+                                    required: true
+                                })}
+                        />
+                        {
+                            errors.title
+                            && <p className="error">Event title is required.</p>
+                        }
+                    </Col>
+                    <Col>
+                        <label htmlFor="date">Event Date</label>
+                        <input
+                            type="date"
+                            name="date"
+                            ref={
+                                register({
+                                    required: true
+                                })}
+                            defaultValue={new Date()}
+                        />
+                        {
+                            errors.date
+                            && <p className="error">Event date is required.</p>
+                        }
+                    </Col>
+                </Row>
 
-                <label htmlFor="date">Event Date</label>
-                <input
-                    type="date"
-                    name="date"
-                    ref={
-                        register({
-                            required: true
-                        })}
-                    defaultValue={new Date().toDateString()}
-                />
-                {
-                    errors.date
-                    && <p className="error">Event date is required.</p>
-                }
 
-                <label htmlFor="description">Event Date</label>
-                <input
-                    placeholder="Enter description"
-                    type="text"
-                    name="description"
-                    ref={
-                        register({
-                            required: true
-                        })}
-                />
-                {
-                    errors.description
-                    && <p className="error">Event date is required.</p>
-                }
-
-                <label>Banner</label>
-                <input
-                    type="file"
-                    name="file"
-                    ref={register}
-                />
-                {errors.file && <p className="error">Image File is required.</p>}
-                <br />
+                <Row>
+                    <Col>
+                        <label htmlFor="description">Description</label>
+                        <input
+                            placeholder="Enter description"
+                            type="text"
+                            name="description"
+                            ref={
+                                register({
+                                    required: true
+                                })}
+                        />
+                        {
+                            errors.description
+                            && <p className="error">Description is required.</p>
+                        }
+                    </Col>
+                    <Col>
+                        <label>Banner</label>
+                        <input
+                            type="file"
+                            name="file"
+                            ref={register}
+                        />
+                        {errors.file && <p className="error">Image File is required.</p>}
+                        <br />
+                    </Col>
+                </Row>
                 <Button type="submit"> Submit </Button>
             </form>
         </div>

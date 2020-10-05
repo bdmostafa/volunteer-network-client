@@ -3,9 +3,28 @@
 }
 
 .add-event-form {
-
+    border: 1px solid gray;
+    border-radius: .25rem;
+    padding: 2rem;
 }
 
 .add-event-form input{
-    display: block
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.add-event-form label {
+    font-weight: bold;
+}
+
+.add-event-form button {
+    margin-top: -1rem;
+}
+
+.u-list {
+    list-style: none;
+}
+
+.u-list li {
+    cursor: pointer;
 }

@@ -37,6 +37,7 @@ const AdminPanel = () => {
             }
         })
     }
+
     
     return (
         <Container>
@@ -47,7 +48,7 @@ const AdminPanel = () => {
                     </Link>
                 </Col>
                 <Col sm={8}>
-                    <h2 style={{ marginTop: '2rem' }}>
+                    <h2 style={{ marginTop: '2rem', marginLeft: '5rem' }}>
                         {showRegisterList
                             ? 'Volunteer Register List'
                             : 'Add Event'
@@ -57,7 +58,7 @@ const AdminPanel = () => {
             </Row>
             <Row className="mt-5">
                 <Col sm={4}>
-                    <ul style={{ listStyle: 'none' }}>
+                    <ul className="u-list">
                         <li
                             onClick={() => { setShowRegisterList(true); setAddEventOption(false) }}
                         >

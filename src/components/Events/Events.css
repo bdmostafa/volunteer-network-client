@@ -1,10 +1,15 @@
 .card-style {
     margin: 2rem;
-    pointer-events: auto;
+    cursor: pointer;
 }
 
 .card-style img {
     height: 240px;
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 10px 10px;
+    margin-top: -15px;
 }
 
 .card-footer {

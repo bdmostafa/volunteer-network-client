@@ -8,7 +8,7 @@ const Events = (props) => {
     const { title, image } = props.event;
     const {loggedInUser, setLoggedInUser} = useContext(UserContext);
     const history = useHistory();
-console.log(props.event.title);
+
     const handleEvent = () => {
         setLoggedInUser({...loggedInUser, event: props.event})
         history.push(`/register/${title}`);
