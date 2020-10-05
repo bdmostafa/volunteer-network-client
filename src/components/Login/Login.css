@@ -1,0 +1,35 @@
+.login-area {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-area img {
+    width: 30%;
+    margin: 2rem
+}
+
+.login-box {
+    border: 1px solid gray;
+    padding: 5rem;
+    width: 550px;
+    height: 500px;
+    border-radius: 1%;
+    margin: 0 auto;
+    /* margin-top: 5rem; */
+}
+.login-box h2 {
+    margin-top: 100px;
+}
+
+.login-btn {
+    background: none;
+    color: black;
+    border-radius: 2rem;
+    border: 1px solid gray;
+    width: 25rem;
+}
+
+.login-btn img {
+    width: 25px;
+    margin: 5px
+}

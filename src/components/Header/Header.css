@@ -1,0 +1,16 @@
+.logo-image {
+    width: 10rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+.nav-link a {
+    margin-right: 1.5rem;
+    margin-top: 0.35rem;
+}
+
+.nav-link button {
+    margin-right: .5rem;
+}

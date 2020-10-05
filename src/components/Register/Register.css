@@ -1,0 +1,31 @@
+.registration-area {
+    text-align: center;
+    display: block;
+}
+
+.registration-area img {
+    width: 30%;
+    margin: 30px;
+}
+
+.error {
+    color: red;
+}
+
+.registration-form {
+    padding: 4rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+}
+
+.registration-form input {
+    border-bottom: 1px solid black !important;
+    border: none;
+}
+
+.registration-form button {
+    
+}

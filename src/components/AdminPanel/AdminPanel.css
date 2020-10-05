@@ -1,0 +1,11 @@
+.content-area {
+    padding: 1rem;
+}
+
+.add-event-form {
+
+}
+
+.add-event-form input{
+    display: block
+}

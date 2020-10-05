@@ -1,0 +1,19 @@
+.card-style {
+    margin: 2rem;
+    pointer-events: auto;
+}
+
+.card-style img {
+    height: 240px;
+}
+
+.card-footer {
+    color: white;
+    margin-bottom: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
