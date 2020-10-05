@@ -14,7 +14,7 @@ const AddEvent = () => {
         formData.append('total', totalData)
         formData.append('file', data.file[0]);
         console.log(data);
-        fetch('http://localhost:4000/add-event', {
+        fetch('https://arcane-inlet-44879.herokuapp.com/add-event', {
             method: 'POST',
             body: formData
         })

@@ -26,7 +26,7 @@ console.log(useParams())
             ...data
         }
 
-        fetch('http://localhost:4000/register-event', {
+        fetch('https://arcane-inlet-44879.herokuapp.com/register-event', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedForm)

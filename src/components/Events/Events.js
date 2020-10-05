@@ -17,7 +17,7 @@ console.log(props.event.title);
     return (
         <div onClick={handleEvent} style={{ width: '25%' }}>
             <Card className="card-style">
-                <Card.Img variant="top" src={`http://localhost:4000/${image}`} />
+                <Card.Img variant="top" src={`https://arcane-inlet-44879.herokuapp.com/${image}`} />
                 <h4 className="card-footer"  style={{backgroundColor:`#${Math.floor(Math.random() * 16777215).toString(16)}`}}>
                     {title}
                 </h4>

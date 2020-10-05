@@ -14,14 +14,14 @@ const AdminPanel = () => {
     const [addEventOption, setAddEventOption] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:4000/all-registered-events')
+        fetch('https://arcane-inlet-44879.herokuapp.com/all-registered-events')
             .then(res => res.json())
             .then(result => setRegisteredEvents(result))
 
     }, [])
 
     const deleteEvent=(id)=>{
-        fetch('http://localhost:4000/delete-event',{
+        fetch('https://arcane-inlet-44879.herokuapp.com/delete-event',{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',

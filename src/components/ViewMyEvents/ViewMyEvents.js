@@ -9,7 +9,7 @@ const ViewEvents = () => {
     const [myEvents, setMyEvents] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/view-my-events',{
+        fetch('https://arcane-inlet-44879.herokuapp.com/view-my-events',{
             method:'GET', 
             headers:{
                 'Content-Type':'application/json',
@@ -24,7 +24,7 @@ const ViewEvents = () => {
 
 
     const handleCancelEvent=(id)=>{
-        fetch('http://localhost:4000/delete-event',{
+        fetch('https://arcane-inlet-44879.herokuapp.com/delete-event',{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',

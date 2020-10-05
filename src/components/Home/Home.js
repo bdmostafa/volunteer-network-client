@@ -13,7 +13,7 @@ const Home = () => {
   const events20 = allEvents.slice(0, 20);
 
   useEffect(() => {
-    fetch('http://localhost:4000/events')
+    fetch('https://arcane-inlet-44879.herokuapp.com/events')
       .then(res => res.json())
       .then(data => setAllEvents(data))
   }, [])
