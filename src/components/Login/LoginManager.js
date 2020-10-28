@@ -17,7 +17,7 @@ export const handleGoogleSignIn = () => {
             const { displayName, email } = res.user;
             const signedInUser = { name: displayName, email }
             // storeAuthToken();
-            console.log(res.user)
+            // console.log(res.user)
             return signedInUser;
         }).catch(err => {
             console.log(err.message)

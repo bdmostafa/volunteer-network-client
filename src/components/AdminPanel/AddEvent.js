@@ -90,7 +90,7 @@ const AddEvent = () => {
                             name="file"
                             ref={register}
                         />
-                        {errors.file && <p className="error">Image File is required.</p>}
+                        {/* {errors.file && <p className="error">Image File is required.</p>} */}
                         <br />
                     </Col>
                 </Row>

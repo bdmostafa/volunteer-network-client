@@ -13,7 +13,6 @@ const Register = () => {
     // Destructuring loggedInUser
     const { name, email } = loggedInUser;
 
-console.log(useParams())
     const { register, errors, handleSubmit } = useForm();
 
     const history = useHistory();

@@ -28,3 +28,7 @@
 .u-list li {
     cursor: pointer;
 }
+
+.u-list li:focus {
+    color: rgb(11, 117, 117);
+}

@@ -9,6 +9,7 @@ const VolunteerList = ({deleteEvent, event: { _id, name, email, date, title }}) 
                 <td>{title}</td>
                 <td>
                     <i
+                    style={{cursor: 'pointer'}}
                     onClick={() => deleteEvent(_id)} 
                 className="far fa-trash-alt text-danger ml-4"></i></td>
             </tr>
