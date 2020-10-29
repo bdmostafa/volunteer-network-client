@@ -1,3 +1,4 @@
+![Volunteer Network](https://user-images.githubusercontent.com/62140337/97521049-e3bd8700-19c6-11eb-978b-4f10ac55dd11.png)
 # Volunteer Network - A Full Stack Web Application
 
 ### [Live Client](https://volunteernetwork2020.web.app/)    
